@@ -6,7 +6,21 @@ namespace NETCore
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Sort();
+            Console.ReadKey();
         }
+
+        static void Sort()
+        {
+            int[] array = new int[] { 23, 45, 67, 20, 145, 342, 2, 8, 5, 2323, 445, 626 };
+
+            Array.Sort(array);
+
+            foreach (int x in array)
+            {
+                Console.WriteLine(x);
+            }
+        }
+
     }
 }
